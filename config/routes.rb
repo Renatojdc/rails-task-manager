@@ -12,4 +12,6 @@ Rails.application.routes.draw do
   post 'tasks', to: 'tasks#create'
 
   get 'tasks/:id', to: 'tasks#show', as: :show
+
+  get "tasks/:id/edit", to: "tasks#edit"
 end
