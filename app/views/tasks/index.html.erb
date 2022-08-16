@@ -1,6 +1,11 @@
 <h2>List of Tasks</h2>
 
-<% @tasks.each do |task| %>
-  <li><%= task.title %></li>
-<% end %>
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+  <% end %>
+</ul>
+<br>
 
+<%# <%= link_to "Show task details", 'tasks/:id_path' %>
+<%= link_to "Back to Home page", root_path %>
