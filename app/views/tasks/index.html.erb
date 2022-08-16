@@ -2,9 +2,10 @@
 <p>Click a tasks to see it's details.</p>
 <ul>
   <% @tasks.each do |task| %>
-    <li><%= link_to task.title, tasks_path(task) %></li>
+    <li><%= link_to task.title, show_path(task) %></li>
   <% end %>
 </ul>
 <br>
-
+<%= link_to "Add new Task", new_path %>
+<br>
 <%= link_to "Back to Home page", root_path %>
