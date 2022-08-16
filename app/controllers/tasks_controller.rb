@@ -10,6 +10,10 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
   end
 
+  def new
+    @task = Task.new
+  end
+  
   def create
     @task = Task.new(params[:task])
     @task.save
